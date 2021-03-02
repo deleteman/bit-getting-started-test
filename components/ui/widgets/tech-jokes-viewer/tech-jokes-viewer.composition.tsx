@@ -1,25 +1,30 @@
 import React, { useState } from 'react';
 import { TechJokesViewer } from './tech-jokes-viewer';
 
-import { AppBar } from '@demo-org/demo-scope.ui.elements.app-bar';
+// 1. Uncomment code.
+// 2. Replace 'demo-org' with your own usernmane/organization
+// 3. Replace 'demo-scope' with your own scope name
+// 4. Both values should be identical to the ones set in the `defaultScope` property in `workspace.json`
 
-export const ToggleBetweenRemoteAndLocalJokes = () => {
-  const [isLocal, setIsLocal] = useState(false);
+// import { AppBar } from '@demo-org/demo-scope.ui.elements.app-bar';
 
-  const menuItems = [
-    { label: 'Explore New Jokes', action: () => setIsLocal(false) },
-    { label: 'Saved Jokes', action: () => setIsLocal(true) },
-  ];
+// export const ToggleBetweenRemoteAndLocalJokes = () => {
+//   const [isLocal, setIsLocal] = useState(false);
 
-  return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <div>
-        <AppBar items={menuItems} style={{ marginBottom: '25px' }} />
-        <TechJokesViewer local={isLocal} />
-      </div>
-    </div>
-  );
-};
+//   const menuItems = [
+//     { label: 'Explore New Jokes', action: () => setIsLocal(false) },
+//     { label: 'Saved Jokes', action: () => setIsLocal(true) },
+//   ];
+
+//   return (
+//     <div style={{ display: 'flex', justifyContent: 'center' }}>
+//       <div>
+//         <AppBar items={menuItems} style={{ marginBottom: '25px' }} />
+//         <TechJokesViewer local={isLocal} />
+//       </div>
+//     </div>
+//   );
+// };
 
 export const RemoteJokes = () => {
   return (

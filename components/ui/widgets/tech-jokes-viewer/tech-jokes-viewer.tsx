@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 
-// Replace 'demo-org' with your own usernmane/organization
-// Replace 'demo-scope' with your own scope name
-// Both values should be identical to the ones set in the `defaultScope` property in `workspace.json`
+
+// 1. Replace 'demo-org' with your own usernmane/organization
+// 2. Replace 'demo-scope' with your own scope name
+// 3. Both values should be identical to the ones set in the `defaultScope` property in `workspace.jsonc`
+
 import { Button } from '@demo-org/demo-scope.ui.elements.button';
 import { useJokes } from '@demo-org/demo-scope.hooks.use-jokes';
 
@@ -12,7 +14,7 @@ export type BadJokesProps = {
   local: boolean;
 };
 
-/** Retrieves and displays bad jokes */
+
 export const TechJokesViewer = ({ local }: BadJokesProps) => {
   const [
     setIsLocal,

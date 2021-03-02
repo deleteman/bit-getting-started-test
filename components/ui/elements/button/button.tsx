@@ -1,13 +1,9 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import cs from 'classnames';
-import { DotsLoader } from '@teambit/teaching.ui.elements.dots-loader';
 
 const styles = require('./button.module.scss');
 
 export type ButtonProps = {
-  /**
-   * Determines whether button has a primary or secondary type of styling.
-   */
   variant: 'primary' | 'secondary';
   isLoading: boolean;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
@@ -25,7 +21,7 @@ export function Button({
       disabled={isLoading || disabled}
       {...rest}
     >
-      {isLoading ? <DotsLoader /> : children}
+      {isLoading ? 'Loading...' : children}
     </button>
   );
 }
