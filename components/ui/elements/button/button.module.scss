@@ -30,7 +30,7 @@
   }
 }
 
-.primary {
+[data-variant='primary'] {
   border: solid 7px #ab3636;
   background-color: #ab3636;
   &:hover {
@@ -39,7 +39,7 @@
   }
 }
 
-.secondary {
+[data-variant='secondary'] {
   border: solid 7px #2b3186;
   background-color: #2b3186;
   &:hover {

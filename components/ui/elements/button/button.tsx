@@ -1,5 +1,4 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import cs from 'classnames';
 
 const styles = require('./button.module.scss');
 
@@ -17,7 +16,8 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
-      className={cs(styles.base, styles[variant])}
+      data-variant={variant}
+      className={styles.base}
       disabled={isLoading || disabled}
       {...rest}
     >
