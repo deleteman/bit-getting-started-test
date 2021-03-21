@@ -1,6 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
-
-const styles = require('./button.module.scss');
+import styles from './button.module.scss';
 
 export type ButtonProps = {
   variant: 'primary' | 'secondary';
