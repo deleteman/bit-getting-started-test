@@ -4,8 +4,8 @@ import React, { useEffect } from 'react';
 // 2. Replace 'demo-scope' with your own scope name
 // 3. Both values should be identical to the ones set in the `defaultScope` property in `workspace.jsonc`
 
-import { Button } from '@demo-org/demo-scope.ui.elements.button';
-import { useJokes } from '@demo-org/demo-scope.hooks.use-jokes';
+import { Button } from '@deleteman/demo-scope.ui.elements.button';
+import { useJokes } from '@deleteman/demo-scope.hooks.use-jokes';
 import styles from './tech-jokes-viewer.module.scss';
 
 export type BadJokesProps = {

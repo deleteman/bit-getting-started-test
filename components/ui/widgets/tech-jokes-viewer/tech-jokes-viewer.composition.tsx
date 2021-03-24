@@ -6,25 +6,25 @@ import { TechJokesViewer } from './tech-jokes-viewer';
 // 3. Replace 'demo-scope' with your own scope name
 // 4. Both values should be identical to the ones set in the `defaultScope` property in `workspace.json`
 
-// import { AppBar } from '@demo-org/demo-scope.ui.elements.app-bar';
+import { AppBar } from '@deleteman/demo-scope.ui.elements.app-bar';
 
-// export const ToggleBetweenRemoteAndLocalJokes = () => {
-//   const [isLocal, setIsLocal] = useState(false);
+export const ToggleBetweenRemoteAndLocalJokes = () => {
+   const [isLocal, setIsLocal] = useState(false);
 
-//   const menuItems = [
-//     { label: 'Explore New Jokes', action: () => setIsLocal(false) },
-//     { label: 'Saved Jokes', action: () => setIsLocal(true) },
-//   ];
+   const menuItems = [
+     { label: 'Explore New Jokes', action: () => setIsLocal(false) },
+     { label: 'Saved Jokes', action: () => setIsLocal(true) },
+   ];
 
-//   return (
-//     <div style={{ display: 'flex', justifyContent: 'center' }}>
-//       <div>
-//         <AppBar items={menuItems} style={{ marginBottom: '25px' }} />
-//         <TechJokesViewer local={isLocal} />
-//       </div>
-//     </div>
-//   );
-// };
+   return (
+     <div style={{ display: 'flex', justifyContent: 'center' }}>
+       <div>
+         <AppBar items={menuItems} style={{ marginBottom: '25px' }} />
+         <TechJokesViewer local={isLocal} />
+       </div>
+     </div>
+   );
+ };
 
 export const RemoteJokes = () => {
   return (
